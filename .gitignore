@@ -1,0 +1,40 @@
+# Root repo hygiene
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+
+# Python
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# Node / web
+node_modules/
+**/node_modules/
+.next/
+out/
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local generated or cache-heavy folders
+hts-cache/
+localhost_3000/
+
+# Local environment files
+.env
+.env.*
