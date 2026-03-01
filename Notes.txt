@@ -1,0 +1,63 @@
+Objective: Deveoplop a solution to effectivel identify unexpected spikes in bullling data and sell it
+FinOps
+
+Finantial oppetrations
+Cloud cost part
+
+budget threshhold already based
+z score detectino
+early warning system
+
+business understanding
+Data understanfing
+data prep
+modeling
+evaluation
+deployment
+
+Data Understanding (EDA)
+modelingValidation of the method
+Take to market
+
+unsupervised learning
+
+scateboard strat (GET IT WORKING)
+
+Analysis
+ml
+Data Pros
+Entrup
+
+best idea of businessfying the project
+
+Relevance to chalange theme
+does the solution WORKING
+level of innocartion
+Technically chalaging/impressive
+user experience
+Go to market oppetrunoty
+presentation quality
+
+
+**SECONDARY NOTES**
+NOTES FROM INFO SESH:
++Develop a solution that detects spikes in billing data
++Cost management, and how you would take that problem to market
++You specify a budget for the month and if you blow it on a day ur screwed
++WE WANT EARLY DETECTION - as the spikes are happening
++z score (AWS) but it sucks
++We have a data dictionary
++Dont hyperfocus on one stage of the cycle try to get through the data cycle
++Look into the future and try see how reality differs, like voorspelling
+
++unsupervised learning
++Ons gaan graphs moet maak om visually te wys waar die anomalies is en dat waar ons predict het
+++scateboard strategy
++Less than normal use is not an anomaly. but check
++Think about this with a logical business standpoint
+
+JUDGING:
+    +Sell it...
+    +presentation:
+        -not a pitch more a demo
+    +foto van criteria

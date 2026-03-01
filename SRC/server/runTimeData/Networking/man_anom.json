@@ -1,0 +1,994 @@
+[
+  {
+    "time": "2024-08-14 18:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "200.00%",
+    "averageValue": 0.00036666666666666667,
+    "currentValue": "0.0011"
+  },
+  {
+    "time": "2024-08-14 18:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "568.88%",
+    "averageValue": 0.003535,
+    "currentValue": "0.023645"
+  },
+  {
+    "time": "2024-08-14 18:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "88.37%",
+    "averageValue": 0.0036099,
+    "currentValue": "0.0068"
+  },
+  {
+    "time": "2024-08-14 18:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "19.51%",
+    "averageValue": 0.0036817272727272727,
+    "currentValue": "0.0044"
+  },
+  {
+    "time": "2024-08-14 18:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "54.00%",
+    "averageValue": 0.0035713571428571426,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-14 19:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "106.96%",
+    "averageValue": 0.0023888260869565216,
+    "currentValue": "0.004944"
+  },
+  {
+    "time": "2024-08-14 19:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "541.78%",
+    "averageValue": 0.0031249166666666665,
+    "currentValue": "0.020055"
+  },
+  {
+    "time": "2024-08-14 19:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "194.10%",
+    "averageValue": 0.0033998799999999997,
+    "currentValue": "0.009999"
+  },
+  {
+    "time": "2024-08-14 19:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "51.94%",
+    "averageValue": 0.00361988,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-14 19:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "39.03%",
+    "averageValue": 0.00395588,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-14 20:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "263.00%",
+    "averageValue": 0.0029900800000000004,
+    "currentValue": "0.010854"
+  },
+  {
+    "time": "2024-08-14 20:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "318.51%",
+    "averageValue": 0.00337988,
+    "currentValue": "0.014145"
+  },
+  {
+    "time": "2024-08-14 20:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "105.87%",
+    "averageValue": 0.0036198399999999996,
+    "currentValue": "0.007452"
+  },
+  {
+    "time": "2024-08-14 20:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "51.94%",
+    "averageValue": 0.0036198399999999996,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-14 20:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "37.51%",
+    "averageValue": 0.00399984,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-14 21:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "139.45%",
+    "averageValue": 0.0033176400000000006,
+    "currentValue": "0.007944"
+  },
+  {
+    "time": "2024-08-14 21:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "373.77%",
+    "averageValue": 0.00359988,
+    "currentValue": "0.017055"
+  },
+  {
+    "time": "2024-08-14 21:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "121.54%",
+    "averageValue": 0.0037085200000000003,
+    "currentValue": "0.008216"
+  },
+  {
+    "time": "2024-08-14 21:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "43.24%",
+    "averageValue": 0.0038398400000000006,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-14 21:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "37.50%",
+    "averageValue": 0.003999880000000001,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-14 22:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "19.12%",
+    "averageValue": 0.0030430400000000008,
+    "currentValue": "0.003625"
+  },
+  {
+    "time": "2024-08-14 22:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "493.76%",
+    "averageValue": 0.0035999600000000006,
+    "currentValue": "0.021375"
+  },
+  {
+    "time": "2024-08-14 22:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "164.53%",
+    "averageValue": 0.00377992,
+    "currentValue": "0.009999"
+  },
+  {
+    "time": "2024-08-14 23:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "676.39%",
+    "averageValue": 0.0032200399999999995,
+    "currentValue": "0.025"
+  },
+  {
+    "time": "2024-08-14 23:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "189.03%",
+    "averageValue": 0.00339996,
+    "currentValue": "0.009827"
+  },
+  {
+    "time": "2024-08-14 23:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "51.94%",
+    "averageValue": 0.00361996,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-14 23:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "37.50%",
+    "averageValue": 0.004000000000000001,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-15 0:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "399.13%",
+    "averageValue": 0.0032486400000000006,
+    "currentValue": "0.016215"
+  },
+  {
+    "time": "2024-08-15 0:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "150.11%",
+    "averageValue": 0.003512,
+    "currentValue": "0.008784"
+  },
+  {
+    "time": "2024-08-15 0:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "158.67%",
+    "averageValue": 0.0037700800000000003,
+    "currentValue": "0.009752"
+  },
+  {
+    "time": "2024-08-15 0:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "43.23%",
+    "averageValue": 0.00383996,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-15 0:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "37.50%",
+    "averageValue": 0.00399996,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-15 1:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "266.02%",
+    "averageValue": 0.00468604,
+    "currentValue": "0.017152"
+  },
+  {
+    "time": "2024-08-15 1:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "96.18%",
+    "averageValue": 0.0039999200000000006,
+    "currentValue": "0.007847"
+  },
+  {
+    "time": "2024-08-15 1:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "113.25%",
+    "averageValue": 0.00399992,
+    "currentValue": "0.00853"
+  },
+  {
+    "time": "2024-08-15 1:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "37.50%",
+    "averageValue": 0.00399992,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-15 2:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "592.54%",
+    "averageValue": 0.0036098799999999998,
+    "currentValue": "0.025"
+  },
+  {
+    "time": "2024-08-15 2:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "98.40%",
+    "averageValue": 0.00391032,
+    "currentValue": "0.007758"
+  },
+  {
+    "time": "2024-08-15 2:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "43.23%",
+    "averageValue": 0.00383996,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-15 2:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "37.50%",
+    "averageValue": 0.00399996,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-15 3:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "422.86%",
+    "averageValue": 0.0043138,
+    "currentValue": "0.022555"
+  },
+  {
+    "time": "2024-08-15 3:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "127.26%",
+    "averageValue": 0.00439988,
+    "currentValue": "0.009999"
+  },
+  {
+    "time": "2024-08-15 3:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "20.58%",
+    "averageValue": 0.00456112,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-15 3:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "25.57%",
+    "averageValue": 0.0043799600000000005,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-15 4:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "224.37%",
+    "averageValue": 0.00459628,
+    "currentValue": "0.014909"
+  },
+  {
+    "time": "2024-08-15 4:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "101.80%",
+    "averageValue": 0.004999880000000001,
+    "currentValue": "0.01009"
+  },
+  {
+    "time": "2024-08-15 4:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "36.37%",
+    "averageValue": 0.004399880000000001,
+    "currentValue": "0.006"
+  },
+  {
+    "time": "2024-08-15 4:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "27.62%",
+    "averageValue": 0.004309560000000001,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-15 4:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "30.33%",
+    "averageValue": 0.004219920000000001,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-15 5:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "525.00%",
+    "averageValue": 0.004,
+    "currentValue": "0.025"
+  },
+  {
+    "time": "2024-08-15 5:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "58.28%",
+    "averageValue": 0.0037800000000000004,
+    "currentValue": "0.005983"
+  },
+  {
+    "time": "2024-08-15 5:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "37.50%",
+    "averageValue": 0.004,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-15 6:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "623.20%",
+    "averageValue": 0.0033799999999999998,
+    "currentValue": "0.024444"
+  },
+  {
+    "time": "2024-08-15 6:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "176.22%",
+    "averageValue": 0.0036199599999999993,
+    "currentValue": "0.009999"
+  },
+  {
+    "time": "2024-08-15 6:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "43.23%",
+    "averageValue": 0.0038399599999999995,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-15 6:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "37.50%",
+    "averageValue": 0.00399996,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-15 7:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "203.59%",
+    "averageValue": 0.0028591600000000008,
+    "currentValue": "0.00868"
+  },
+  {
+    "time": "2024-08-15 7:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "382.82%",
+    "averageValue": 0.0033799200000000002,
+    "currentValue": "0.016319"
+  },
+  {
+    "time": "2024-08-15 7:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "24.94%",
+    "averageValue": 0.00349036,
+    "currentValue": "0.004361"
+  },
+  {
+    "time": "2024-08-15 7:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "55.75%",
+    "averageValue": 0.0036198800000000002,
+    "currentValue": "0.005638"
+  },
+  {
+    "time": "2024-08-15 7:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "43.24%",
+    "averageValue": 0.0038398400000000006,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-15 7:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "37.51%",
+    "averageValue": 0.003999840000000001,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-15 8:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "733.34%",
+    "averageValue": 0.00299996,
+    "currentValue": "0.025"
+  },
+  {
+    "time": "2024-08-15 8:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "194.12%",
+    "averageValue": 0.0033999599999999996,
+    "currentValue": "0.01"
+  },
+  {
+    "time": "2024-08-15 8:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "51.94%",
+    "averageValue": 0.0036199599999999998,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-15 8:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "37.42%",
+    "averageValue": 0.00400232,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-15 9:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "590.32%",
+    "averageValue": 0.00307016,
+    "currentValue": "0.021194"
+  },
+  {
+    "time": "2024-08-15 9:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "18.08%",
+    "averageValue": 0.00322236,
+    "currentValue": "0.003805"
+  },
+  {
+    "time": "2024-08-15 9:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "193.91%",
+    "averageValue": 0.0034023599999999997,
+    "currentValue": "0.01"
+  },
+  {
+    "time": "2024-08-15 9:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "51.83%",
+    "averageValue": 0.00362236,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-15 9:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "37.42%",
+    "averageValue": 0.00400232,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-15 10:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "594.00%",
+    "averageValue": 0.00360232,
+    "currentValue": "0.025"
+  },
+  {
+    "time": "2024-08-15 10:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "171.76%",
+    "averageValue": 0.00362228,
+    "currentValue": "0.009844"
+  },
+  {
+    "time": "2024-08-15 10:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "43.21%",
+    "averageValue": 0.0038404800000000007,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-15 10:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "37.50%",
+    "averageValue": 0.0039999200000000006,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-15 11:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "400.00%",
+    "averageValue": 0.004999960000000001,
+    "currentValue": "0.025"
+  },
+  {
+    "time": "2024-08-15 11:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "85.19%",
+    "averageValue": 0.005399960000000001,
+    "currentValue": "0.01"
+  },
+  {
+    "time": "2024-08-15 12:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "133.62%",
+    "averageValue": 0.00465504,
+    "currentValue": "0.010875"
+  },
+  {
+    "time": "2024-08-15 12:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "182.50%",
+    "averageValue": 0.00500004,
+    "currentValue": "0.014125"
+  },
+  {
+    "time": "2024-08-15 12:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "59.05%",
+    "averageValue": 0.00533976,
+    "currentValue": "0.008493"
+  },
+  {
+    "time": "2024-08-15 13:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "400.00%",
+    "averageValue": 0.005000000000000001,
+    "currentValue": "0.025"
+  },
+  {
+    "time": "2024-08-15 13:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "37.50%",
+    "averageValue": 0.00399996,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-15 14:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "524.49%",
+    "averageValue": 0.0039999200000000006,
+    "currentValue": "0.024979"
+  },
+  {
+    "time": "2024-08-15 14:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "146.27%",
+    "averageValue": 0.00406016,
+    "currentValue": "0.009999"
+  },
+  {
+    "time": "2024-08-15 14:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "37.50%",
+    "averageValue": 0.00399992,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-15 15:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "594.42%",
+    "averageValue": 0.0036,
+    "currentValue": "0.024999"
+  },
+  {
+    "time": "2024-08-15 15:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "64.52%",
+    "averageValue": 0.0036651999999999995,
+    "currentValue": "0.00603"
+  },
+  {
+    "time": "2024-08-15 15:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "43.23%",
+    "averageValue": 0.0038399599999999995,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-15 15:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "37.50%",
+    "averageValue": 0.0039999200000000006,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-15 16:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "211.42%",
+    "averageValue": 0.0045690800000000005,
+    "currentValue": "0.014229"
+  },
+  {
+    "time": "2024-08-15 16:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "227.96%",
+    "averageValue": 0.00328396,
+    "currentValue": "0.01077"
+  },
+  {
+    "time": "2024-08-15 16:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "176.22%",
+    "averageValue": 0.00361992,
+    "currentValue": "0.009999"
+  },
+  {
+    "time": "2024-08-15 16:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "43.23%",
+    "averageValue": 0.00383992,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-15 16:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "37.50%",
+    "averageValue": 0.0039999200000000006,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-15 17:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "400.01%",
+    "averageValue": 0.00499992,
+    "currentValue": "0.025"
+  },
+  {
+    "time": "2024-08-15 17:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "75.08%",
+    "averageValue": 0.00537636,
+    "currentValue": "0.009413"
+  },
+  {
+    "time": "2024-08-15 17:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "51.94%",
+    "averageValue": 0.00361996,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-15 17:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "24.58%",
+    "averageValue": 0.003210800000000001,
+    "currentValue": "0.004"
+  },
+  {
+    "time": "2024-08-15 17:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "60.31%",
+    "averageValue": 0.003430800000000001,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-15 18:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "433.97%",
+    "averageValue": 0.004430760000000001,
+    "currentValue": "0.023659"
+  },
+  {
+    "time": "2024-08-15 19:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "524.99%",
+    "averageValue": 0.0039999200000000006,
+    "currentValue": "0.024999"
+  },
+  {
+    "time": "2024-08-15 19:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "37.38%",
+    "averageValue": 0.004003400000000001,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-15 19:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "30.23%",
+    "averageValue": 0.004223360000000001,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-15 19:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "22.86%",
+    "averageValue": 0.0046232800000000004,
+    "currentValue": "0.00568"
+  },
+  {
+    "time": "2024-08-15 20:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "343.99%",
+    "averageValue": 0.004798480000000001,
+    "currentValue": "0.021305"
+  },
+  {
+    "time": "2024-08-15 20:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "17.78%",
+    "averageValue": 0.0037358800000000005,
+    "currentValue": "0.0044"
+  },
+  {
+    "time": "2024-08-15 20:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "52.78%",
+    "averageValue": 0.0035999200000000004,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-15 20:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "149.98%",
+    "averageValue": 0.00399988,
+    "currentValue": "0.009999"
+  },
+  {
+    "time": "2024-08-15 21:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "400.01%",
+    "averageValue": 0.00499988,
+    "currentValue": "0.025"
+  },
+  {
+    "time": "2024-08-15 21:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "30.33%",
+    "averageValue": 0.00421992,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-15 21:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "30.33%",
+    "averageValue": 0.00421992,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-15 21:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "105.05%",
+    "averageValue": 0.0039999200000000006,
+    "currentValue": "0.008202"
+  },
+  {
+    "time": "2024-08-15 22:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "399.98%",
+    "averageValue": 0.004999960000000001,
+    "currentValue": "0.024999"
+  },
+  {
+    "time": "2024-08-15 22:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "28.99%",
+    "averageValue": 0.004264,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-15 22:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "92.21%",
+    "averageValue": 0.004399920000000001,
+    "currentValue": "0.008457"
+  },
+  {
+    "time": "2024-08-15 23:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "551.05%",
+    "averageValue": 0.003839959999999999,
+    "currentValue": "0.025"
+  },
+  {
+    "time": "2024-08-15 23:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "150.00%",
+    "averageValue": 0.004,
+    "currentValue": "0.01"
+  },
+  {
+    "time": "2024-08-16 0:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "530.98%",
+    "averageValue": 0.00383988,
+    "currentValue": "0.024229"
+  },
+  {
+    "time": "2024-08-16 0:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "37.50%",
+    "averageValue": 0.00399988,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-16 0:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "37.50%",
+    "averageValue": 0.00399988,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-16 0:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "15.57%",
+    "averageValue": 0.004129120000000001,
+    "currentValue": "0.004772"
+  },
+  {
+    "time": "2024-08-16 0:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "30.68%",
+    "averageValue": 0.0039999200000000006,
+    "currentValue": "0.005227"
+  },
+  {
+    "time": "2024-08-16 1:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "23.41%",
+    "averageValue": 0.004456560000000001,
+    "currentValue": "0.0055"
+  },
+  {
+    "time": "2024-08-16 1:00:00",
+    "service_type": "Networking",
+    "detectedRule": "Spike Detection",
+    "detectedValue": "17.61%",
+    "averageValue": 0.0046765600000000015,
+    "currentValue": "0.0055"
+  }
+]

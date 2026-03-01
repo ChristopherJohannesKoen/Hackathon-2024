@@ -1,0 +1,11 @@
+,usage_end_time,cost,service_type,region,usage_amount,usage_unit
+273462,2024-03-18 1:00:00,0.0,Cloud DNS,us-central1,1.0,requests
+273575,2024-03-18 2:00:00,0.0,Cloud DNS,us-central1,1.0,requests
+273668,2024-03-18 3:00:00,0.0,Cloud DNS,us-central1,1.0,requests
+273782,2024-03-18 4:00:00,0.0,Cloud DNS,us-central1,1.0,requests
+275985,2024-03-19 1:00:00,0.0,Cloud DNS,us-central1,1.0,requests
+276087,2024-03-19 2:00:00,0.0,Cloud DNS,us-central1,1.0,requests
+333545,2024-04-11 1:00:00,0.0,Cloud DNS,us-central1,1.0,requests
+333667,2024-04-11 2:00:00,0.0,Cloud DNS,us-central1,1.0,requests
+423524,2024-05-14 1:00:00,0.0,Cloud DNS,us-central1,1.0,requests
+423638,2024-05-14 2:00:00,0.0,Cloud DNS,us-central1,1.0,requests

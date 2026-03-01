@@ -1,0 +1,21 @@
+,usage_end_time,cost,service_type,region,usage_amount,usage_unit
+316556,2024-04-04 10:00:00,1e-06,Cloud Functions,europe-west1,751619277.0,byte-seconds
+369101,2024-04-24 9:00:00,2e-06,Cloud Functions,europe-west1,1046898278.0,byte-seconds
+369227,2024-04-24 10:00:00,1e-06,Cloud Functions,europe-west1,805306368.0,byte-seconds
+369462,2024-04-24 12:00:00,1.2e-05,Cloud Functions,europe-west1,5556613939.0,byte-seconds
+371290,2024-04-25 3:00:00,1e-06,Cloud Functions,europe-west1,483183821.0,byte-seconds
+371291,2024-04-25 3:00:00,1.2e-05,Cloud Functions,europe-west1,5449239757.0,byte-seconds
+371847,2024-04-25 8:00:00,2.6e-05,Cloud Functions,europe-west1,11408506880.0,byte-seconds
+371980,2024-04-25 9:00:00,1.2e-05,Cloud Functions,europe-west1,5556613939.0,byte-seconds
+372097,2024-04-25 10:00:00,1.5e-05,Cloud Functions,europe-west1,6818260582.0,byte-seconds
+372255,2024-04-25 11:00:00,1.4e-05,Cloud Functions,europe-west1,6254546125.0,byte-seconds
+372256,2024-04-25 11:00:00,1.3e-05,Cloud Functions,europe-west1,5583457485.0,byte-seconds
+372429,2024-04-25 12:00:00,2.9e-05,Cloud Functions,europe-west1,12696997069.0,byte-seconds
+386414,2024-04-30 11:00:00,2.7e-05,Cloud Functions,europe-west1,11999064883.0,byte-seconds
+386415,2024-04-30 11:00:00,4.3e-05,Cloud Functions,europe-west1,19381039923.0,byte-seconds
+386562,2024-04-30 12:00:00,0.000106,Cloud Functions,europe-west1,46439333888.0,byte-seconds
+386563,2024-04-30 12:00:00,1.6e-05,Cloud Functions,europe-west1,7274600858.0,byte-seconds
+386789,2024-04-30 14:00:00,1.2e-05,Cloud Functions,europe-west1,5449239757.0,byte-seconds
+391321,2024-05-02 9:00:00,9.9e-05,Cloud Functions,europe-west1,42708081050.0,byte-seconds
+391417,2024-05-02 10:00:00,7.2e-05,Cloud Functions,europe-west1,31219043533.0,byte-seconds
+391537,2024-05-02 11:00:00,5.6e-05,Cloud Functions,europe-west1,24347095859.0,byte-seconds

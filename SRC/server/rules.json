@@ -1,0 +1,11 @@
+{
+  "rules": {
+    "Networking": [
+      {
+        "ruleType": "Spike Detection",
+        "value": "15",
+        "unit": "% away from daily average"
+      }
+    ]
+  }
+}

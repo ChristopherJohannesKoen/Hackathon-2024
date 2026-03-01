@@ -1,0 +1,5 @@
+reference_time,is_anomaly,usage_end_time,cost,usage_amount,usage_unit,service_type
+0.0,0,2024-05-17 11:00:00,0.0,1456.0,seconds,Deep Learning VM
+1.0,0,2024-05-17 12:00:00,0.0,14396.0,seconds,Deep Learning VM
+2.0,0,2024-05-17 13:00:00,0.0,14400.0,seconds,Deep Learning VM
+3.0,0,2024-05-17 14:00:00,0.0,13312.0,seconds,Deep Learning VM

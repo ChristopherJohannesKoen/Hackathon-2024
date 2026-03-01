@@ -1,0 +1,17 @@
+,usage_end_time,cost,service_type,region,usage_amount,usage_unit
+386378,2024-04-30 11:00:00,0.0,Artifact Registry,europe-west1,342352150.0,bytes
+386520,2024-04-30 12:00:00,0.0,Artifact Registry,europe-west1,342447013.0,bytes
+386521,2024-04-30 12:00:00,0.0,Artifact Registry,europe-west1,5370.0,bytes
+386756,2024-04-30 14:00:00,0.0,Artifact Registry,europe-west1,57087367.0,bytes
+391270,2024-05-02 9:00:00,0.0,Artifact Registry,europe-west1,228358339.0,bytes
+391368,2024-05-02 10:00:00,1e-06,Artifact Registry,europe-west1,11419.0,bytes
+391369,2024-05-02 10:00:00,0.0,Artifact Registry,europe-west1,858.0,bytes
+391370,2024-05-02 10:00:00,0.0,Artifact Registry,europe-west1,114171781.0,bytes
+391484,2024-05-02 11:00:00,0.0,Artifact Registry,europe-west1,114177430.0,bytes
+547443,2024-06-24 19:00:00,1e-06,Artifact Registry,europe-west1,22978.0,bytes
+553139,2024-06-26 15:00:00,0.0,Artifact Registry,europe-west1,552.0,bytes
+592654,2024-07-10 13:00:00,2e-06,Artifact Registry,europe-west1,22978.0,bytes
+594761,2024-07-11 6:00:00,0.0,Artifact Registry,europe-west1,280.0,bytes
+594762,2024-07-11 6:00:00,0.0,Artifact Registry,europe-west1,272.0,bytes
+626594,2024-07-22 12:00:00,0.0,Artifact Registry,europe-west1,552.0,bytes
+672723,2024-08-07 12:00:00,0.0,Artifact Registry,europe-west1,552.0,bytes

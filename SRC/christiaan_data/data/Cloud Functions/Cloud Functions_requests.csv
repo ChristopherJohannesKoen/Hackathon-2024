@@ -1,0 +1,27 @@
+,usage_end_time,cost,service_type,region,usage_amount,usage_unit
+316550,2024-04-04 10:00:00,0.0,Cloud Functions,europe-west1,1.0,requests
+369094,2024-04-24 9:00:00,0.0,Cloud Functions,europe-west1,3.0,requests
+369095,2024-04-24 9:00:00,0.0,Cloud Functions,europe-west1,2.0,requests
+369218,2024-04-24 10:00:00,0.0,Cloud Functions,europe-west1,1.0,requests
+369456,2024-04-24 12:00:00,0.0,Cloud Functions,europe-west1,1.0,requests
+371275,2024-04-25 3:00:00,0.0,Cloud Functions,europe-west1,1.0,requests
+371276,2024-04-25 3:00:00,0.0,Cloud Functions,europe-west1,1.0,requests
+371838,2024-04-25 8:00:00,0.0,Cloud Functions,europe-west1,6.0,requests
+371970,2024-04-25 9:00:00,0.0,Cloud Functions,europe-west1,2.0,requests
+372088,2024-04-25 10:00:00,0.0,Cloud Functions,europe-west1,2.0,requests
+372246,2024-04-25 11:00:00,0.0,Cloud Functions,europe-west1,3.0,requests
+372247,2024-04-25 11:00:00,0.0,Cloud Functions,europe-west1,1.0,requests
+372421,2024-04-25 12:00:00,0.0,Cloud Functions,europe-west1,6.0,requests
+386404,2024-04-30 11:00:00,0.0,Cloud Functions,europe-west1,2.0,requests
+386405,2024-04-30 11:00:00,0.0,Cloud Functions,europe-west1,13.0,requests
+386406,2024-04-30 11:00:00,0.0,Cloud Functions,europe-west1,1.0,requests
+386553,2024-04-30 12:00:00,0.0,Cloud Functions,europe-west1,6.0,requests
+386554,2024-04-30 12:00:00,0.0,Cloud Functions,europe-west1,8.0,requests
+386555,2024-04-30 12:00:00,0.0,Cloud Functions,europe-west1,0.0,requests
+386556,2024-04-30 12:00:00,0.0,Cloud Functions,europe-west1,0.0,requests
+386600,2024-04-30 12:00:00,0.0,Cloud Functions,europe-west1,0.0,requests
+386784,2024-04-30 14:00:00,0.0,Cloud Functions,europe-west1,1.0,requests
+391295,2024-05-02 9:00:00,0.0,Cloud Functions,europe-west1,9.0,requests
+391390,2024-05-02 10:00:00,0.0,Cloud Functions,europe-west1,2.0,requests
+391391,2024-05-02 10:00:00,0.0,Cloud Functions,europe-west1,4.0,requests
+391514,2024-05-02 11:00:00,0.0,Cloud Functions,europe-west1,5.0,requests

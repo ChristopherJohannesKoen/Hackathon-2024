@@ -1,0 +1,9 @@
+reference_time,is_anomaly,usage_end_time,cost,usage_amount,usage_unit,service_type
+0.0,0,2024-05-17 08:00:00,0.035236,2883.0,seconds,BigQuery Reservation API
+1.0,0,2024-05-17 09:00:00,0.035236,2883.0,seconds,BigQuery Reservation API
+2.0,0,2024-05-17 10:00:00,0.035236,2883.0,seconds,BigQuery Reservation API
+3.0,0,2024-05-17 11:00:00,0.035236,2883.0,seconds,BigQuery Reservation API
+4.0,0,2024-05-17 12:00:00,0.050098,4099.0,seconds,BigQuery Reservation API
+5.0,1,2024-05-17 13:00:00,0.177723,14541.0,seconds,BigQuery Reservation API
+6.0,0,2024-05-17 14:00:00,0.161944,13250.0,seconds,BigQuery Reservation API
+7.0,0,2024-05-17 15:00:00,0.013297,1088.0,seconds,BigQuery Reservation API

@@ -1,0 +1,13 @@
+,usage_end_time,cost,service_type,region,usage_amount,usage_unit
+179552,2024-02-08 14:00:00,0.0,Cloud Monitoring,europe-west1,2.0,requests
+189676,2024-02-13 8:00:00,0.0,Cloud Monitoring,us-central1,1.0,requests
+190107,2024-02-13 11:00:00,0.0,Cloud Monitoring,europe-west1,2.0,requests
+190297,2024-02-13 12:00:00,0.0,Cloud Monitoring,us-central1,1.0,requests
+358323,2024-04-20 9:00:00,0.0,Cloud Monitoring,europe-west1,1.0,requests
+358428,2024-04-20 10:00:00,0.0,Cloud Monitoring,europe-west1,1.0,requests
+403837,2024-05-07 2:00:00,0.0,Cloud Monitoring,europe-west1,1.0,requests
+438611,2024-05-19 0:00:00,0.0,Cloud Monitoring,europe-west1,1.0,requests
+438728,2024-05-19 1:00:00,0.0,Cloud Monitoring,europe-west1,1.0,requests
+475942,2024-05-31 21:00:00,0.0,Cloud Monitoring,europe-west1,1.0,requests
+498632,2024-06-08 21:00:00,0.0,Cloud Monitoring,europe-west1,2.0,requests
+516320,2024-06-14 17:00:00,0.0,Cloud Monitoring,europe-west1,1.0,requests

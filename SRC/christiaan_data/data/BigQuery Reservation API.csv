@@ -1,0 +1,12 @@
+,usage_end_time,cost,service_type,region,usage_amount,usage_unit
+433857,2024-05-17 8:00:00,0.035236,BigQuery Reservation API,europe-west1,2883.0,seconds
+433951,2024-05-17 9:00:00,0.035236,BigQuery Reservation API,europe-west1,2883.0,seconds
+434055,2024-05-17 10:00:00,0.035236,BigQuery Reservation API,europe-west1,2883.0,seconds
+434174,2024-05-17 11:00:00,0.035236,BigQuery Reservation API,europe-west1,2883.0,seconds
+434328,2024-05-17 12:00:00,0.018553,BigQuery Reservation API,europe-west1,1518.0,seconds
+434329,2024-05-17 12:00:00,0.031545,BigQuery Reservation API,europe-west1,2581.0,seconds
+434500,2024-05-17 13:00:00,0.0,BigQuery Reservation API,europe-west1,0.0,seconds
+434501,2024-05-17 13:00:00,0.177723,BigQuery Reservation API,europe-west1,14541.0,seconds
+434649,2024-05-17 14:00:00,0.160502,BigQuery Reservation API,europe-west1,13132.0,seconds
+434650,2024-05-17 14:00:00,0.001442,BigQuery Reservation API,europe-west1,118.0,seconds
+434807,2024-05-17 15:00:00,0.013297,BigQuery Reservation API,europe-west1,1088.0,seconds

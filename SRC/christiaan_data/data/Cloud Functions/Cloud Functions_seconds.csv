@@ -1,0 +1,23 @@
+,usage_end_time,cost,service_type,region,usage_amount,usage_unit
+316586,2024-04-04 10:00:00,6.6e-05,Cloud Functions,europe-west1,3.0,seconds
+369134,2024-04-24 9:00:00,7e-05,Cloud Functions,europe-west1,3.0,seconds
+369259,2024-04-24 10:00:00,5.6e-05,Cloud Functions,europe-west1,2.0,seconds
+369488,2024-04-24 12:00:00,0.000533,Cloud Functions,europe-west1,22.0,seconds
+371326,2024-04-25 3:00:00,7e-06,Cloud Functions,europe-west1,0.0,seconds
+371327,2024-04-25 3:00:00,0.00051,Cloud Functions,europe-west1,21.0,seconds
+371879,2024-04-25 8:00:00,0.00045,Cloud Functions,europe-west1,19.0,seconds
+371880,2024-04-25 8:00:00,0.000577,Cloud Functions,europe-west1,24.0,seconds
+372006,2024-04-25 9:00:00,0.000533,Cloud Functions,europe-west1,22.0,seconds
+372120,2024-04-25 10:00:00,0.000541,Cloud Functions,europe-west1,23.0,seconds
+372283,2024-04-25 11:00:00,0.000522,Cloud Functions,europe-west1,22.0,seconds
+372284,2024-04-25 11:00:00,0.000512,Cloud Functions,europe-west1,21.0,seconds
+372458,2024-04-25 12:00:00,0.001068,Cloud Functions,europe-west1,45.0,seconds
+386460,2024-04-30 11:00:00,0.001201,Cloud Functions,europe-west1,50.0,seconds
+386461,2024-04-30 11:00:00,0.001715,Cloud Functions,europe-west1,72.0,seconds
+386591,2024-04-30 12:00:00,0.00377,Cloud Functions,europe-west1,157.0,seconds
+386592,2024-04-30 12:00:00,0.000405,Cloud Functions,europe-west1,17.0,seconds
+386818,2024-04-30 14:00:00,0.000521,Cloud Functions,europe-west1,22.0,seconds
+391286,2024-05-02 9:00:00,0.003408,Cloud Functions,europe-west1,142.0,seconds
+391381,2024-05-02 10:00:00,0.001656,Cloud Functions,europe-west1,69.0,seconds
+391382,2024-05-02 10:00:00,0.000998,Cloud Functions,europe-west1,42.0,seconds
+391506,2024-05-02 11:00:00,0.002304,Cloud Functions,europe-west1,96.0,seconds

@@ -1,0 +1,1 @@
+{"Compute Engine": 0, "Networking": 1, "Cloud Logging": 2, "Kubernetes Engine": 3, "Cloud Storage": 4, "BigQuery": 5, "Vertex AI": 6, "Cloud Monitoring": 7, "Cloud SQL": 8, "Cloud DNS": 9, "Cloud Pub/Sub": 10, "Artifact Registry": 11, "Cloud Functions": 12, "Cloud Build": 13, "BigQuery Reservation API": 14, "Deep Learning VM": 15, "Cloud Dataflow": 16, "Dataplex": 17}

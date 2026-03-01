@@ -1,0 +1,229 @@
+import json
+import os
+import pandas as pd
+from subprocess import run
+from pate.PATE_metric import PATE
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.ensemble import IsolationForest
+from pate.PATE_metric import PATE
+from datetime import datetime, timedelta
+from collections import deque
+import os
+
+def get_service_name(id):
+    with open('ids.json', 'r') as f:
+        id_mapping = json.load(f)
+    return id_mapping.get(id)
+
+def access_service_folder(service_name):
+    service_folder_path = f"./runTimeData/{service_name}"
+    if os.path.exists(service_folder_path):
+        return service_folder_path
+    else:
+        raise FileNotFoundError(f"Service folder for {service_name} not found.")
+
+def read_data_csv(service_folder_path):
+    data_csv_path = os.path.join(service_folder_path, 'data.csv')
+    if os.path.exists(data_csv_path):
+        df = pd.read_csv(data_csv_path)
+        df['usage_end_time'] = pd.to_datetime(df['usage_end_time'])
+        return df
+    else:
+        raise FileNotFoundError("Data.csv file not found.")
+    
+def run_model(service_folder_path):
+    # Assume the script is in the current directory or a fixed path
+    class PATEAnomalyDetector:
+        def __init__(self, e_buffer=100, d_buffer=100, binary_scores=False):
+            self.e_buffer = e_buffer
+            self.d_buffer = d_buffer
+            self.binary_scores = binary_scores
+            self.time_series_data = deque()  # To hold the time series data as it arrives
+            self.labels = deque()  # To hold dynamic ground truth labels
+            self.threshold = None  # To store the calculated threshold
+            self.result = None  # To store the PATE score
+
+        def add_data(self, timestamp, value):
+            """
+            Adds a new data point to the time series and updates the dynamic ground truth labels.
+            """
+            print(f"Adding data point - Timestamp: {timestamp}, Value: {value}")
+            self.time_series_data.append((timestamp, value))
+            self.update_labels()  # Update ground truth labels with the new data
+
+        def update_labels(self):
+            """
+            Updates the ground truth labels using Isolation Forest as new data points are added.
+            """
+            if len(self.time_series_data) > 1:
+                print("Updating labels...")
+                _, values = zip(*self.time_series_data)
+                values_array = np.array(values).reshape(-1, 1)
+
+                # Use IsolationForest to generate synthetic labels
+                model = IsolationForest(contamination=0.01, random_state=42)
+                model.fit(values_array)
+                labels = model.predict(values_array)
+
+                # Convert the labels (-1 for anomaly, 1 for normal) to binary labels (1 for anomaly, 0 for normal)
+                labels = np.where(labels == -1, 1, 0)
+
+                # Update the labels deque
+                self.labels = deque(labels, maxlen=len(values))
+                print(f"Labels updated: {list(self.labels)}")
+
+        def detect_anomalies(self):
+            """
+            Applies the PATE algorithm to detect anomalies in the time series data.
+            """
+            if not self.time_series_data:
+                raise ValueError("No data available for anomaly detection.")
+            
+            timestamps, values = zip(*self.time_series_data)
+            y_score = np.array(values)
+            
+            # Check if labels are available
+            if self.labels:
+                y_true = np.array(self.labels)
+                print("Running PATE algorithm...")
+                self.result = PATE(y_true, y_score, e_buffer=self.e_buffer, d_buffer=self.d_buffer, binary_scores=self.binary_scores)
+                print("PATE Score (AUC-PR):", self.result)
+            else:
+                print("No ground truth labels available.")
+                self.result = None
+
+            # Detect anomalies and return them along with the PATE score
+            anomalies = self._detect_anomalies(y_score)
+            return self.result, anomalies
+
+        def _detect_anomalies(self, y_score):
+            """
+            Detects anomalies based on the PATE score.
+            """
+            print("Detecting anomalies...")
+            self.threshold = np.mean(y_score) + 2 * np.std(y_score)
+            print(f"Anomaly detection threshold: {self.threshold}")
+            anomalies = [(timestamp, value) for (timestamp, value), score in zip(self.time_series_data, y_score) if score > self.threshold]
+            print(f"Anomalies detected: {anomalies}")
+            return anomalies
+        
+        def visualize_anomalies(self, anomalies):
+            """
+            Visualizes the time series data and highlights the detected anomalies.
+            """
+            if not self.time_series_data:
+                raise ValueError("No data available for visualization.")
+
+            print("Visualizing anomalies...")
+            timestamps, values = zip(*self.time_series_data)
+            
+            if anomalies:
+                anomaly_timestamps, anomaly_values = zip(*anomalies)
+            else:
+                anomaly_timestamps, anomaly_values = [], []
+
+            plt.figure(figsize=(14, 7))
+            plt.plot(timestamps, values, label='Time Series Data')
+            
+            if anomalies:
+                plt.scatter(anomaly_timestamps, anomaly_values, color='red', label='Detected Anomalies')
+
+            plt.title('Time Series Data with Detected Anomalies')
+            plt.xlabel('Time')
+            plt.ylabel('Value')
+            plt.legend()
+            plt.grid(True)
+            plt.show()
+
+        def save_attributes(self, filepath):
+            """
+            Save the attributes of the last run to a file.
+            """
+            with open(filepath, 'w') as f:
+                f.write(f"e_buffer={self.e_buffer}\n")
+                f.write(f"d_buffer={self.d_buffer}\n")
+                f.write(f"binary_scores={self.binary_scores}\n")
+                f.write(f"threshold={self.threshold}\n")
+                f.write(f"PATE Score (AUC-PR)={self.result}\n")
+                f.write(f"Anomaly Labels={list(self.labels)}\n")
+
+    # Load data from CSV
+    csv_file_path = os.path.join(service_folder_path, 'data.csv')
+    df = pd.read_csv(csv_file_path)
+    df['usage_end_time'] = pd.to_datetime(df['usage_end_time'])
+
+    # Prepare data
+    df['reference_time'] = (df['usage_end_time'] - df['usage_end_time'].min()).dt.total_seconds() / 3600  # Reference time in hours
+
+    # Generate all possible hourly reference times
+    min_time = df['reference_time'].min()
+    max_time = df['reference_time'].max()
+    all_hours = pd.DataFrame({'reference_time': np.arange(min_time, max_time + 1)})
+
+    # Merge with original data to fill in missing hours
+    df = all_hours.merge(df, on='reference_time', how='left')
+
+    # Handle duplicates by adding a suffix
+    df['suffix'] = df.groupby('reference_time').cumcount() + 1
+    df['suffix'] = df['suffix'].apply(lambda x: f"{x}" if x > 1 else "")
+
+    # Combine the reference_time and suffix
+    df['reference_time'] = df['reference_time'].astype(str) + df['suffix']
+
+    # Initialize the PATE anomaly detector
+    detector = PATEAnomalyDetector(e_buffer=100, d_buffer=100, binary_scores=False)
+
+    # Add data points to the detector
+    for _, row in df.iterrows():
+        if pd.notna(row['cost']):
+            detector.add_data(row['usage_end_time'], row['cost'])
+
+    # Detect anomalies
+    score, anomalies = detector.detect_anomalies()
+
+    if anomalies:
+        print(f"Anomalies detected: {anomalies}")
+    else:
+        print("No anomalies detected.")
+
+    # Add the anomaly labels to the dataframe
+    df['is_anomaly'] = np.nan
+    df.loc[df['cost'].notna(), 'is_anomaly'] = list(detector.labels)
+
+    # Select relevant columns and save to processedData.csv
+    df_output = df[['reference_time', 'is_anomaly', 'usage_end_time', 'cost', 'usage_amount', 'usage_unit', 'service_type']]
+
+    # Save processedData.csv in the same directory as the input CSV
+    output_dir = os.path.dirname(csv_file_path)
+    processed_data_path = os.path.join(output_dir, 'pateIsoTree4V1PointProcessedData.csv')
+    df_output.to_csv(processed_data_path, index=False)
+    print(f"Processed data saved to {processed_data_path}")
+
+    # Save the attributes to a file in the same directory as the input CSV
+    attributes_path = os.path.join(output_dir, 'pateIsoTree4V1PointAttributes.txt')
+    detector.save_attributes(attributes_path)
+    print(f"Attributes saved to {attributes_path}")
+
+    # Visualize the detected anomalies
+    detector.visualize_anomalies(anomalies)
+    
+    print("Process completed.")
+
+
+
+
+#CallReceivedAccessingDataRunModel = CRADRM
+def CRADRM(received_id):
+
+    # Step 2-3: Access the service folder
+    service_name = get_service_name(received_id)
+    service_folder_path = access_service_folder(service_name)
+
+    # Step 4: Read Data.csv
+    df = read_data_csv(service_folder_path)
+
+    # Step 5: Run the model
+    run_model(service_folder_path)
