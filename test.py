@@ -3,13 +3,17 @@ import numpy as np
 import scipy.stats as stats
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
+from pathlib import Path
+
+repo_root = Path(__file__).resolve().parent
+split_data_dir = repo_root / "SRC" / "Data" / "split_data"
 
 # Read the list of service fields
-fields = list(pd.read_csv("./SRC/data/split_data/_Services.csv"))
+fields = list(pd.read_csv(split_data_dir / "_Services.csv"))
 
 # Loop through the list of service fields
 for i in range(1, len(fields)):
-    path = "./SRC/data/split_data/" + fields[i] + ".csv"  # Use the correct index i
+    path = split_data_dir / f"{fields[i]}.csv"
     df = pd.read_csv(path)
     
     c = 10

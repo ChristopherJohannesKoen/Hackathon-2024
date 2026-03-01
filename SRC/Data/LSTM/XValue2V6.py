@@ -2,9 +2,9 @@ import numpy as np
 import pandas as pd
 import scipy.stats as stats
 from sklearn.preprocessing import MinMaxScaler, OneHotEncoder
-import tensorflow as tf
 from tensorflow.keras.models import load_model
 import matplotlib.pyplot as plt
+from pathlib import Path
 
 # Step 1: Calculate Z-Scores and Normalize Them
 def calculate_z_scores(usage_amount):
@@ -18,14 +18,23 @@ def calculate_z_scores(usage_amount):
     
     return normalized_z_scores.flatten()
 
+# Resolve paths relative to the repository root for portability.
+repo_root = Path(__file__).resolve().parents[3]
+model_path = repo_root / "SRC" / "Data" / "LSTM" / "1.lstm_model.h5"
+data_path = repo_root / "SRC" / "Data" / "split_data" / "Cloud Storage TEST DO NOT USE.csv"
+
+if not model_path.exists():
+    raise FileNotFoundError(f"LSTM model not found: {model_path}")
+
+if not data_path.exists():
+    raise FileNotFoundError(f"Input data file not found: {data_path}")
+
 # Load the LSTM model
-model_path = r"C:\Users\<redacted-user>\Documents\Hackathon 2024\Hackathon2024\SRC\Data\LSTM\1.lstm_model.h5"
 print(f"Loading LSTM model from {model_path}...")
-model = load_model(model_path)
+model = load_model(str(model_path))
 print("Model loaded successfully.")
 
 # Load the specific dataset
-data_path = r"C:\Users\<redacted-user>\Documents\Hackathon 2024\Hackathon2024\SRC\Data\split_data\Cloud Storage TEST DO NOT USE.csv"
 print(f"Loading data from {data_path}...")
 data = pd.read_csv(data_path)
 print(f"Data loaded successfully with shape: {data.shape}")
