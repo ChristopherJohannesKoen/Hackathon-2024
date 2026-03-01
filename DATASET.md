@@ -13,7 +13,7 @@ Based on a local scan, tracked content is large (about 0.92 GB total), with seve
 Representative tracked data categories:
 
 1. Source or base billing data
-- `SRC/server/bigData.csv`
+- `apps/server/bigData.csv`
 - `SRC/Data/gcp_billing_data_20240816 - gcp_billing_data_20240816.csv`
 - Related copies under `visualization`, `SRC/Data/Prophet`, and `SRC/christiaan_data`
 
@@ -23,8 +23,8 @@ Representative tracked data categories:
 - `SRC/Data/LSTM/predictions*.csv`
 
 3. Runtime service data
-- `SRC/server/runTimeData/<service>/data.csv`
-- `SRC/server/runTimeData/<service>/pateStandard...ProcessedData.csv`
+- `apps/server/runTimeData/<service>/data.csv`
+- `apps/server/runTimeData/<service>/pateStandard...ProcessedData.csv`
 
 4. Local environment and generated bundles (currently tracked in parts)
 - `.venv/*`

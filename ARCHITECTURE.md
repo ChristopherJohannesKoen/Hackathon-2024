@@ -3,23 +3,23 @@
 ## System Components
 The project is built from four primary layers:
 
-1. Frontend (`SRC/user-interface`)
+1. Frontend (`apps/web`)
    - Next.js app used for dashboard, focused service view, reports, and settings.
    - Calls backend endpoints on `http://localhost:3001`.
 
-2. Node API (`SRC/server/index.js`)
+2. Node API (`apps/server/index.js`)
    - Express server exposing endpoints for:
      - service lookup
      - chart data retrieval
      - anomaly data retrieval
      - manual rule management
-   - Reads CSV and JSON artifacts from `SRC/server/runTimeData`.
+   - Reads CSV and JSON artifacts from `apps/server/runTimeData`.
 
-3. Python pipelines (`SRC/server/setup.py` and scripts under `SRC/Data`, `SRC/Pate`)
+3. Python pipelines (`apps/server/setup.py` and scripts under `SRC/Data`, `SRC/Pate`)
    - `setup.py` splits `bigData.csv` into per-service files in `runTimeData`.
    - Additional scripts perform anomaly experiments, forecasting, and metric evaluation.
 
-4. Runtime CSV and JSON store (`SRC/server/runTimeData`)
+4. Runtime CSV and JSON store (`apps/server/runTimeData`)
    - Service-specific folders hold:
      - `data.csv` (base timeseries)
      - `pateStandard...ProcessedData.csv` (anomaly outputs)
@@ -38,7 +38,7 @@ Flow requested: frontend -> Node API -> Python pipelines -> runtime CSV
    This Python step prepares per-service CSV files from `bigData.csv`.
 
 4. Prepared files are stored in:
-   - `SRC/server/runTimeData/<Service Name>/data.csv`
+   - `apps/server/runTimeData/<Service Name>/data.csv`
 
 5. Frontend requests chart data:
    - `POST /getData` or `POST /getDataVariableTime`
@@ -51,7 +51,7 @@ Flow requested: frontend -> Node API -> Python pipelines -> runtime CSV
 7. Manual rule configuration:
    - `POST /getRules`
    - `POST /saveRules`
-   Rules are persisted to `SRC/server/rules.json`.
+   Rules are persisted to `apps/server/rules.json`.
 
 ## API Surface (Current)
 - `GET /getServices`
@@ -66,11 +66,11 @@ Flow requested: frontend -> Node API -> Python pipelines -> runtime CSV
 
 ## Runtime Artifacts
 Generated and updated artifacts in backend scope:
-- `ids.json`
-- `services.json`
-- `rules.json`
-- `runTimeData/<Service>/data.csv`
-- `runTimeData/<Service>/man_anom.json` (if manual rules are used)
+- `apps/server/ids.json`
+- `apps/server/services.json`
+- `apps/server/rules.json`
+- `apps/server/runTimeData/<Service>/data.csv`
+- `apps/server/runTimeData/<Service>/man_anom.json` (if manual rules are used)
 
 ## Notes
 - Data exchange format is primarily JSON over HTTP and CSV on disk.

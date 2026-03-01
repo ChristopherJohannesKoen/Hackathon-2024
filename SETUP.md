@@ -7,19 +7,19 @@
 
 ## Required Data Files
 The backend expects:
-- `SRC/server/bigData.csv`
+- `apps/server/bigData.csv`
 
-This file is used by `SRC/server/setup.py` to generate per-service runtime data in:
-- `SRC/server/runTimeData`
+This file is used by `apps/server/setup.py` to generate per-service runtime data in:
+- `apps/server/runTimeData`
 
 ## Windows Setup
 
 ### 1. Backend (Node API + Python prep)
 ```powershell
-cd SRC\server
+cd apps\server
 npm install
 python -m pip install pandas
-node index.js
+npm run start
 ```
 
 Notes:
@@ -30,7 +30,7 @@ Notes:
 Open a second terminal:
 
 ```powershell
-cd SRC\user-interface
+cd apps\web
 npm install
 npm run dev
 ```
@@ -42,17 +42,17 @@ Open:
 
 ### 1. Backend
 ```bash
-cd SRC/server
+cd apps/server
 npm install
 python3 -m pip install pandas
-node index.js
+npm run start
 ```
 
 ### 2. Frontend
 In a second terminal:
 
 ```bash
-cd SRC/user-interface
+cd apps/web
 npm install
 npm run dev
 ```
@@ -64,7 +64,7 @@ Open:
 
 Frontend:
 ```bash
-cd SRC/user-interface
+cd apps/web
 npm run dev
 npm run build
 npm run start
@@ -72,12 +72,12 @@ npm run start
 
 Backend:
 ```bash
-cd SRC/server
-node index.js
+cd apps/server
+npm run start
 ```
 
 ## Troubleshooting
 - If frontend cannot fetch data, verify backend is running on port `3001`.
-- If backend startup fails, confirm `bigData.csv` exists in `SRC/server`.
+- If backend startup fails, confirm `bigData.csv` exists in `apps/server`.
 - If Python command fails, install dependencies and verify `python`/`python3` is on PATH.
 - If cross-origin errors appear, verify frontend is served from `http://localhost:3000`.

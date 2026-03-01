@@ -4,10 +4,10 @@
 This repository contains a hackathon prototype for detecting unusual cloud billing behavior and surfacing it in a web dashboard.
 
 The current solution combines:
-- A Next.js frontend dashboard (`SRC/user-interface`)
-- A Node.js + Express API layer (`SRC/server`)
-- Python preprocessing and anomaly scripts (`SRC/server`, `SRC/Data`, `SRC/Pate`)
-- CSV-based runtime data storage (`SRC/server/runTimeData`)
+- A Next.js frontend dashboard (`apps/web`)
+- A Node.js + Express API layer (`apps/server`)
+- Python preprocessing and anomaly scripts (`apps/server`, `SRC/Data`, `SRC/Pate`)
+- CSV-based runtime data storage (`apps/server/runTimeData`)
 
 The project focuses on three alert states:
 - Fine
@@ -25,9 +25,9 @@ High-level data flow:
 For deeper detail, see [ARCHITECTURE.md](./ARCHITECTURE.md).
 
 ## Repository Layout
-- `SRC/user-interface`: Next.js frontend (dashboard, focused service view, settings, reports)
-- `SRC/server`: Express backend and Python setup bridge
-- `SRC/server/runTimeData`: Service-level runtime CSV data and anomaly artifacts
+- `apps/server`: Express backend and Python setup bridge
+- `apps/server/runTimeData`: Service-level runtime CSV data and anomaly artifacts
+- `apps/web`: Next.js frontend (dashboard, focused service view, settings, reports)
 - `SRC/Data`: Data exploration and model experiments (Prophet, LSTM, preprocessing)
 - `SRC/Pate`: PATE metric code and experiments
 - `visualization` and `SRC/visualisation`: plotting scripts and generated images
@@ -37,11 +37,11 @@ Full setup instructions: [SETUP.md](./SETUP.md)
 
 Short version:
 1. Start backend:
-   - `cd SRC/server`
+   - `cd apps/server`
    - `npm install`
-   - `node index.js`
+   - `npm run start`
 2. Start frontend:
-   - `cd SRC/user-interface`
+   - `cd apps/web`
    - `npm install`
    - `npm run dev`
 3. Open `http://localhost:3000`
