@@ -1,11 +1,24 @@
 import React, { useState, useEffect } from 'react';
 
-const ManualAlerting = ({ service, id }) => {
+interface Rule {
+  ruleType: string;
+  value?: string;
+  value1?: string;
+  value2?: string;
+  unit?: string;
+}
+
+interface ManualAlertingProps {
+  service?: string;
+  id?: string;
+}
+
+const ManualAlerting = ({ service, id }: ManualAlertingProps) => {
   const [ruleType, setRuleType] = useState('Spike Detection');
   const [value1, setValue1] = useState('');
   const [value2, setValue2] = useState('');
   const [unit, setUnit] = useState('% away from daily average');
-  const [rules, setRules] = useState([]);
+  const [rules, setRules] = useState<Rule[]>([]);
   const [manualRulesEnabled, setManualRulesEnabled] = useState(false);
 
   useEffect(() => {
@@ -20,8 +33,9 @@ const ManualAlerting = ({ service, id }) => {
           body: JSON.stringify({ id }),
         });
         const data = await response.json();
-        setRules(data.rules || []);
-        setManualRulesEnabled(data.rules && data.rules.length > 0);
+        const loadedRules = Array.isArray(data.rules) ? data.rules : [];
+        setRules(loadedRules);
+        setManualRulesEnabled(loadedRules.length > 0);
       } catch (error) {
         console.error('Failed to fetch rules:', error);
       }
@@ -37,18 +51,42 @@ const ManualAlerting = ({ service, id }) => {
 
     const updatedRules = [...rules, newRule];
     setRules(updatedRules);
+    setManualRulesEnabled(true);
     await saveRules(updatedRules);
 
     resetForm();
   };
 
-  const handleDeleteRule = async (index) => {
+  const handleDeleteRule = async (index: number) => {
     const updatedRules = rules.filter((_, i) => i !== index);
     setRules(updatedRules);
     await saveRules(updatedRules);
   };
 
-  const saveRules = async (updatedRules) => {
+  const handleEditRule = async (index: number) => {
+    const ruleToEdit = rules[index];
+    if (!ruleToEdit) {
+      return;
+    }
+
+    setRuleType(ruleToEdit.ruleType);
+
+    if (ruleToEdit.ruleType === 'Range') {
+      setValue1(ruleToEdit.value1 ?? '');
+      setValue2(ruleToEdit.value2 ?? '');
+      setUnit('');
+    } else {
+      setValue1(ruleToEdit.value ?? '');
+      setValue2('');
+      setUnit(ruleToEdit.unit ?? '% away from daily average');
+    }
+
+    const updatedRules = rules.filter((_, i) => i !== index);
+    setRules(updatedRules);
+    await saveRules(updatedRules);
+  };
+
+  const saveRules = async (updatedRules: Rule[]) => {
     try {
       const response = await fetch('http://localhost:3001/saveRules', {
         method: 'POST',
@@ -73,7 +111,7 @@ const ManualAlerting = ({ service, id }) => {
     setUnit('% away from daily average');
   };
 
-  const handleRuleTypeChange = (e) => {
+  const handleRuleTypeChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const selectedRuleType = e.target.value;
     setRuleType(selectedRuleType);
     setValue1('');
@@ -185,7 +223,7 @@ const ManualAlerting = ({ service, id }) => {
           <button
             onClick={handleAddRule}
             className="w-full py-2 px-4 bg-blue-600 text-white font-semibold rounded-md shadow hover:bg-blue-500 disabled:bg-gray-400"
-            disabled={!value1}
+            disabled={!value1 || (ruleType === 'Range' && !value2)}
           >
             Add Rule
           </button>

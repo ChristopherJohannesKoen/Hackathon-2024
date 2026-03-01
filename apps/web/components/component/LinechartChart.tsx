@@ -1,7 +1,11 @@
 import React, { PureComponent } from 'react';
 import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 
- export function LinechartChart({data}) {
+interface LinechartChartProps {
+  data: any[];
+}
+
+ export function LinechartChart({data}: LinechartChartProps) {
 
     console.log(data);
 

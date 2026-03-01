@@ -18,6 +18,7 @@ To read more about using these font, please visit the Next.js documentation:
 - Pages Directory: https://nextjs.org/docs/pages/building-your-application/optimizing/fonts
 **/
 import Link from "next/link"
+import Image from "next/image"
 import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuItem } from "@/components/ui/dropdown-menu"
 import { Button } from "@/components/ui/button"
 
@@ -49,7 +50,7 @@ export function Dashboard() {
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="ghost" size="icon" className="rounded-full ml-auto">
-                <img
+                <Image
                   src="/placeholder.svg"
                   width="32"
                   height="32"
@@ -132,7 +133,7 @@ export function Dashboard() {
 }
 
 
-function FrameIcon(props) {
+function FrameIcon(props: any) {
   return (
     <svg
       {...props}
@@ -155,7 +156,7 @@ function FrameIcon(props) {
 }
 
 
-function LinechartChart(props) {
+function LinechartChart(_props: any) {
   return (
     <h3>Your Chart here</h3>
   )

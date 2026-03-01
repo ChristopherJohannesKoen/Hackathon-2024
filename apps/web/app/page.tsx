@@ -1,8 +1,6 @@
 'use client'
 
 import Link from "next/link"
-import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuItem } from "@/components/ui/dropdown-menu"
-import { Button } from "@/components/ui/button"
 import { LinechartChart } from "@/components/component/LinechartChart"
 
 import { useState, useEffect } from "react"
@@ -10,17 +8,21 @@ import { useState, useEffect } from "react"
 
 import { useRouter } from "next/navigation"
 
+type ServiceMap = Record<string, string>;
+type ServiceFlag = [number, number, string];
+type FlagMap = Record<string, ServiceFlag>;
+type GraphDataMap = Record<string, any[]>;
 
 export default function Dashboard() {
-  const [services, setServices] = useState({});
-  const [flags, setFlags] = useState({});
-  const [graphData, setGraphData] = useState({});
+  const [services, setServices] = useState<ServiceMap>({});
+  const [flags, setFlags] = useState<FlagMap>({});
+  const [graphData, setGraphData] = useState<GraphDataMap>({});
   const [loading, setLoading] = useState(true);
   
   const router = useRouter()
  
 
-  const handleClick = (key) =>{
+  const handleClick = (key: string) =>{
     console.log(key);
     router.push(`/focus/${key}`)
   }
@@ -59,7 +61,7 @@ export default function Dashboard() {
           const graphDataItem = await graphResponse.json();
           
           // Update the graph data incrementally
-          setGraphData(prevGraphData => ({
+          setGraphData((prevGraphData) => ({
             ...prevGraphData,
             [key]: graphDataItem
           }));
@@ -160,7 +162,7 @@ export default function Dashboard() {
   )
 }
 
-function FrameIcon(props) {
+function FrameIcon(props: any) {
   return (
     <svg
       {...props}

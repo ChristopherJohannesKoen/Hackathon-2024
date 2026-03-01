@@ -5,11 +5,7 @@ import Settings from '@/components/component/settings'
 import Link from "next/link"
 
 
-import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuItem } from "@/components/ui/dropdown-menu"
-
-
-
-const page = () => {
+const GlobalSettingsPage = () => {
     return (
         <div>
             <header className="flex items-center h-16 px-4 border-b shrink-0 md:px-6">
@@ -25,15 +21,15 @@ const page = () => {
           <Link href="/reports" className="text-muted-foreground" prefetch={false}>
             Reports
           </Link>
-          <Link href="/globasetting" className="text-muted-foreground" prefetch={false}>
+          <Link href="/globalsettings" className="text-muted-foreground" prefetch={false}>
             Settings
           </Link>
         </nav>
      
       </header>
-            <Settings></Settings>
+            <Settings service="Global Rules" id="global"></Settings>
         </div>
     )
 }
 
-export default page
+export default GlobalSettingsPage

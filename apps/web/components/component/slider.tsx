@@ -1,14 +1,19 @@
 import React, { useState } from 'react';
 import { Range, getTrackBackground } from 'react-range';
 
-const SnapSlider = ({ values = [1], onChange }) => {
+interface SnapSliderProps {
+  values?: number[];
+  onChange?: (value: number) => void;
+}
+
+const SnapSlider = ({ values = [1], onChange }: SnapSliderProps) => {
   const STEP = 1;
   const MIN = 1;
   const MAX = 6;
 
   const [value, setValue] = useState(values);
 
-  const handleChange = (values) => {
+  const handleChange = (values: number[]) => {
     setValue(values);
     if (onChange) {
       onChange(values[0]);
@@ -95,7 +100,7 @@ const SnapSlider = ({ values = [1], onChange }) => {
   );
 };
 
-const TimeRangeDisplay = ({ value }) => {
+const TimeRangeDisplay = ({ value }: { value: number }) => {
   const timeRanges = [
     '1 day',       // 1
     '4 days',      // 2
